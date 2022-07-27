@@ -1,3 +1,17 @@
-API_URL="https://api.themoviedb.org/3/movie/popular?api_key=688d11ca48b21b1d3ef4bf43ceb1f5fe"
-API_IMG="https://image.tmdb.org/t/p/w500/"
-API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=688d11ca48b21b1d3ef4bf43ceb1f5fe&query"
+Marvel-API
+
+Desafio API de Filmes. Eu utilizei o vercel.com para deixar projeto online. Segue os 4 links do projeto para teste: 
+
+BUILD COMMAND:
+
+npm run build
+react-scripts build
+INSTALL COMMAND:
+
+yarn install
+pnpm install
+npm install
+DEVELOPMENT COMMNAND:
+
+react-scripts start
+npm start
