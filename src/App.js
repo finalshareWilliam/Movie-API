@@ -19,8 +19,10 @@ function App() {
 
   return (
     <div className='container'>
-      {movies.map((moviesReq)=> 
-      <MovieBox key={moviesReq.id} {...moviesReq}/>)}
+      <div className='grid'>
+        {movies.map((moviesReq)=> 
+        <MovieBox key={moviesReq.id} {...moviesReq}/>)}
+      </div>
     </div>
   );
 }
