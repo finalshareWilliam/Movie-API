@@ -2,7 +2,7 @@ import { Modal,show,Button} from 'react-bootstrap';
 import React, {useState} from 'react';
 const API_IMG="https://image.tmdb.org/t/p/w500/";
 
-const MovieBox =({id,title, poster_path, vote_average, release_date, overview})=>{
+const MovieBox =({id, title, poster_path, vote_average, release_date, overview})=>{
     
     const [show, setShow]=useState(false);
 
@@ -20,11 +20,12 @@ const MovieBox =({id,title, poster_path, vote_average, release_date, overview})=
                         <Modal.Title></Modal.Title>
                       </Modal.Header>
                       <Modal.Body>
-                      <img className="card-img-top" style={{width:'14rem'}}src={API_IMG+poster_path} />
+                      <img className="card-img-top"src={API_IMG+poster_path} />
                       <h3>Nome: {title}</h3>
                       <h4>Nota: {vote_average/2}</h4>
                       <h5>Data de Lancamento: {release_date}</h5>
-                      <h6>ID: {id}</h6>
+                      <h7>ID: {id}</h7>
+                      <br></br>
                       <br></br>
                       <h6>Resumo</h6>
                       <p>{overview}</p>
